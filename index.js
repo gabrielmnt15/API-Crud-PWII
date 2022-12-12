@@ -11,6 +11,9 @@ app.use(bodyParser.json())
 //Pokémon Routes
 app.use('/api/v1/pokemons', pokemonRouter)
 
+//Moves Routes
+app.use('/api/v1/moves', moveRouter)
+
 
 app.listen(port, () => {
     console.log(`Listening on the port ${port}`);    
